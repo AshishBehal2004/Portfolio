@@ -8,15 +8,17 @@ import Experience from './components/Experience'
 import Hero from './components/Hero'
 import Project from './components/Project'
 import Skills from './components/Skills'
+import { Canvas } from '@react-three/fiber'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <>
-      
+
       <section>
+
         <About />
         <Contact/>
         <Experience />
