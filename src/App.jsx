@@ -8,27 +8,22 @@ import Experience from './components/Experience'
 import Hero from './components/Hero'
 import Project from './components/Project'
 import Skills from './components/Skills'
-import { Canvas } from '@react-three/fiber'
+import NavigationBar from './components/NavigationBar'
 import './App.css'
+
 
 function App() {
   
 
   return (
     <>
-
+      
+        
+      
       <section>
-
-        <About />
-        <Contact/>
-        <Experience />
-        <Hero />
-        <Project/>
-        <Skills/>
+        <NavigationBar/>
       </section>
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
     </>
   )
 }
