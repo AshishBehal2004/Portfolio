@@ -5,7 +5,7 @@ import heroImg from './assets/hero.png'
 import About from './components/About'
 import Contact from './components/Contact'
 import Experience from './components/Experience'
-import Hero from './components/Hero'
+import Home from './components/Home'
 import Project from './components/Project'
 import Skills from './components/Skills'
 import NavigationBar from './components/NavigationBar'
@@ -17,7 +17,7 @@ function App() {
   return (
     <>
       <NavigationBar/>  
-      <Hero/>
+      <Home/>
       <About/>
       <Experience/>
       <Skills/>
