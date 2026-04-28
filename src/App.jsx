@@ -14,15 +14,15 @@ import './App.css'
 
 function App() {
   
-
   return (
     <>
-      
-        
-      
-      <section>
-        <NavigationBar/>
-      </section>
+      <NavigationBar/>  
+      <Hero/>
+      <About/>
+      <Experience/>
+      <Skills/>
+      <Contact/>
+      <Project/>
 
     </>
   )
