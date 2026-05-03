@@ -1,15 +1,16 @@
+import '../components/home.css'
 export default function Home() {
   return (
-    <div id="home" >
-        <p className="text-4xl">What is Lorem Ipsum?
-        Lorem Ipsum is simply dummy text of the printing and 
-        typesetting industry. Lorem Ipsum has been the industry's
-        standard dummy text ever since the 1500s, when an unknown printer took 
-        a galley of type and scrambled it to make a type specimen book. It has survived 
-        not only five centuries, but also the leap into electronic typesetting,
-        remaining essentially unchanged. It was popularised in the 1960s with the release
-        of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-        publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <section id="home">
+      <div className="container">
+        <div className="info">
+          <h1>Hi I'm Ashish</h1>
+          <h2>Aspiring SOftware Developeer</h2>
+          <p>Hi I'm Ashish, an aspiring Software engineer with a focus on full-stack development and AI, I like tackling hard problems and building things that actually work.</p>
     </div>
+        
+      </div>
+    </section>
+    
   );
 }

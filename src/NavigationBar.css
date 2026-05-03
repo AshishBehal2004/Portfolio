@@ -3,32 +3,47 @@ html {
 }
 
 ul{
-    
     list-style-type: none;
     overflow: hidden;
     padding: 0;
-    margin:0;
-    background-color: #333333;
-    height: 70px;
+    height: 40px;
 }
 #navBar {
     top: 0;
     position: sticky;
+    padding: 1rem 2%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(11, 11, 20);
+    border-bottom: 1px solid;
 }
-ul li{
-    float: right;
+
+.logo{
+    font-size: 2rem;
+    font-weight: 700;
+    color: blueviolet;
+
+    
 }
-ul li a{
-    display: block;
-    color: white;
-    text-align: center;
-    font-size: 25px;
-    padding: 14px 16px;
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links li a{
+    position: relative;
+    font-size: 1.85rem;
+    font-weight: 500;
     text-decoration: none;
-
+    color:rgb(178, 175, 175);
+    transition: 0.3s;
 }
 
-ul li a:hover {
-  background-color: #111111;
+.nav-links li a:hover{
+    color: rgba(0, 255, 183, 0.862);
+    text-shadow: 0 0 10px #38bdf8;
+     
 }
 

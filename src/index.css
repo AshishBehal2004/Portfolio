@@ -2,4 +2,28 @@
 
 body {
   margin: 0;
+
+  background-color: #0d0d1a;
+  
+}
+
+
+#about{
+  color: aliceblue ;
+}
+
+#contact{
+  color: aliceblue ;
+}
+
+#experience{
+  color: aliceblue ;
+}
+
+#project{
+  color: aliceblue ;
+}
+
+#skills{
+  color: aliceblue ;
 }
