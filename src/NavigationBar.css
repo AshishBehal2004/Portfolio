@@ -17,6 +17,14 @@ ul{
     justify-content: space-between;
     background-color: rgb(11, 11, 20);
     border-bottom: 1px solid;
+    transition:  0.3s ease-in-out;
+}
+.visible{
+    transform: translateY(0);
+}
+
+.hidden{
+    transform: translateY(-100%);
 }
 
 .logo{
