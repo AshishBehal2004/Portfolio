@@ -17,12 +17,13 @@ function App() {
   return (
     <>
       <NavigationBar/>  
+      
+      <Home/>
+      <About/>
       <Experience/>
       <Project/>
       <Skills/>
       <Contact/>
-      <Home/>
-      <About/>
     </>
   )
 }

@@ -1,4 +1,4 @@
-import '../components/home.css'
+import './home.css'
 export default function Home() {
   return (
     <section id="home">

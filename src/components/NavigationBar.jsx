@@ -1,5 +1,5 @@
 import React, { Component, useEffect, useState } from 'react';
-import '../NavigationBar.css'
+import './NavigationBar.css'
 export default function NavigationBar(){
 
     const [toggle, setToggle ] = useState(false);
@@ -17,6 +17,7 @@ export default function NavigationBar(){
 
     useEffect(() =>{
         window.addEventListener('scroll', scrolling);
+        return () => removeEventListener('scroll',scrolling);
     },[])
     
     return(
