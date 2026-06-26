@@ -2,7 +2,7 @@ html {
     scroll-behavior: smooth;
 }
 
-ul{
+.nav-links{
     list-style-type: none;
     overflow: hidden;
     padding: 0;

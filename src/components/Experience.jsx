@@ -8,6 +8,11 @@ export default function Experience() {
   const [letter, setLetter] = useState("");
   const [letterPosition, setLetterPosition] = useState(0);
 
+  const [bulletPoint, setBulletPoint] = useState(0);
+  const [bulletposition, setBulletPosition] = useState(0);
+  const [bulletText, setBulletText] = useState("");
+  const bulletpoints = data[0].description[bulletPoint];
+  const [completedBullets, setCompletedBullets] = useState([])
   useEffect(() => {
     const interval = setInterval(() =>{
 
@@ -22,10 +27,30 @@ export default function Experience() {
     return () => clearInterval(interval)
   }, [letterPosition])
 
+  useEffect(() => {
+    if (letterPosition < fullText.length){
+      return
+    }
+    const interval2 = setInterval(() => {
+      if (bulletposition >= bulletpoints.length){
+        setBulletPoint(bulletPoint + 1)
+        setBulletPosition(0)
+        setCompletedBullets([...completedBullets, bulletpoints])
+        setBulletText("")
+      }
+      else{
+        setBulletText(bulletText + bulletpoints[bulletposition])
+        setBulletPosition(bulletposition + 1) 
+      }
+      
+    }, 15)
+    return () => clearInterval(interval2)
+  }, [bulletposition, letterPosition, bulletPoint])
+
   return (
     <>
     <section id="experience">
-    <h2>Experience</h2>
+    <h2 className="section-heading">Experience</h2>
     <div className="terminal-card">
       <div className="terminal-header">
         <span className="dot red"></span>
@@ -34,19 +59,9 @@ export default function Experience() {
       </div>
       <div className="terminal-body">
         <pre className='typewriter'>{letter}</pre>
-        {data.map((item) => (
-          <div key={item.company} className="terminal-item">
-            {/* <p><span className="prompt">&gt;</span> role: "{item.roleName}"</p>
-            <p><span className="prompt">&gt;</span> company: "{item.company}"</p>
-            <p><span className="prompt">&gt;</span> period: "{item.startDate} – {item.endDate}"</p> */}
-            <p className="comment">// what I did:</p>
-            <ul>
-              {item.description.map((bullet, index) => (
-                <li key={index}>{bullet}</li>
-              ))}
-            </ul>
-          </div>
-        ))}
+        {completedBullets.map((b,i) => <p className="bulletpoints" key={i}> -- {b}</p>)}
+        <p>{bulletText}</p>
+        
       </div>
     </div>
   </section>

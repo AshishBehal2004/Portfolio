@@ -1,0 +1,70 @@
+.terminal-card{
+    background-color: rgb(25, 25, 46);
+    border-radius: 19px;
+    border: 1px solid #8000ff;
+    /* color: green; */
+    max-width: 800px;
+    margin: auto;
+    overflow-y: auto;
+    height: 320px;
+    box-shadow: 0 0 10px rgb(0, 91, 247);
+}
+
+.bulletpoints{
+    color: #00ffb7;
+}
+.terminal-header{
+    display: flex;
+    gap: 9px;
+    /* padding: 10px 0; */
+    border-bottom: 1px solid grey;
+    padding: 8px 12px;
+    background-color: rgb(28, 33, 30);
+}
+
+.dot{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.red{
+    background-color: #ff0000;
+}
+.yellow{
+    background-color:#ffe100;
+}
+
+.green{
+    background-color:#00c510;
+}
+
+.terminal-body{
+    background-color: rgb(13, 17, 23);
+    padding: 1rem 1.5rem;
+}
+
+.typewriter{
+    white-space: pre-wrap;
+    color: #00ffb7;
+}
+
+.comment{
+    color: #6a9955; 
+}
+
+.terminal-body li{
+    color: #cdd6f4; 
+}
+
+#experience h2 {
+    font-size: 4rem;  
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.terminal-body ul{
+    list-style: disc;
+    padding-left: 1.5rem;
+
+}
