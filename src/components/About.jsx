@@ -2,7 +2,7 @@ import './about.css'
 export default function About() {
   return (
     <div id="about">
-      <h1 className="section-heading">About</h1>
+      <h2 className="section-heading">About</h2>
       <div className="content">
         <p >Hi, I'm Ashish Behal, currently in my final year pursuing a Bachelor of IT (Software Development) at the Adelaide University.
  I am a motivated individual with a passion for problem-solving, software development, and building things that are both functional 

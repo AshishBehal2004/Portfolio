@@ -43,7 +43,7 @@ export default function Experience() {
         setBulletPosition(bulletposition + 1) 
       }
       
-    }, 15)
+    }, 9)
     return () => clearInterval(interval2)
   }, [bulletposition, letterPosition, bulletPoint])
 

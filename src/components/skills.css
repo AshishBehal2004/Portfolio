@@ -1,0 +1,31 @@
+#skills .terminal-card{
+    height:fit-content
+}
+.terminal-fileName{
+    color: #888;
+    font-family: monospace;
+    font-size: 0.8rem;
+    margin-left: 1rem;
+}
+
+.skill-row{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.skill-row h3{
+    min-width: 140px;
+    color:#ff79c6;
+    font-family: monospace;
+    font-size: 1rem;
+    
+}
+
+.skill-tag{
+    border-radius: 1px;
+    padding: 2px 12px;
+    color: #ffd700;
+    font-size: 1rem;
+}
