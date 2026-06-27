@@ -1,5 +1,7 @@
 import { skills } from "./skillsData";
 import './skills.css'
+import './ScrambleText'
+import ScrambleText from "./ScrambleText";
 export default function Skills() {
   return (
     <div id="skills">
@@ -19,7 +21,7 @@ export default function Skills() {
               {"["}
               {item.skills.map((skill, index) =>(
                 <span key={skill} className="skill-tag">
-                  {skill}{index < item.skills.length - 1 ? ',' : '' }
+                  {<ScrambleText text={skill}/>}{index < item.skills.length - 1 ? ',' : '' }
                 </span>
               ))}
               {"]"}
