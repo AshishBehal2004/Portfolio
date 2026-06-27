@@ -1,27 +1,23 @@
 import { useState, useEffect } from "react";
 
 export default function ScrambleText({text}){
-    const chars = "!@#$%&*abcdefghijklmnopqrstuvwxyz"
+    const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%&*"
 
     const randomStart = Array.from({length: text.length} , () =>  chars[Math.floor(Math.random() * chars.length)]).join('')
     const [displayText, setDisplayText] = useState(randomStart)
     useEffect(() => {
-        let revealIndex = 0
-        let tickCounter = 0
+        let ticks = 0
         const interval = setInterval(() =>{
             
-            if (revealIndex >= text.length){
+            ticks++
+            if (ticks >= text.length * 6){
                 setDisplayText(text)
                 clearInterval(interval)
                 return
             }
-            const scrambled = text.split('').map((char, i ) => i < revealIndex ? char : char[Math.floor(Math.random() * chars.length)]).join('')
-            setDisplayText(scrambled)
-            tickCounter++
-            if (tickCounter % 8 == 0){
-                revealIndex++
-            }
-        }, 40)
+            const shuffled = Array.from({length: text.length} , () => chars[Math.floor(Math.random() * chars.length)]).join('')
+            setDisplayText(shuffled)
+        }, 50)
         return () => clearInterval(interval)
     },[])
     return(<span>{displayText}</span>)

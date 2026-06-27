@@ -18,13 +18,14 @@
 .skill-row h3{
     min-width: 140px;
     color:#ff79c6;
-    font-family: monospace;
+    font-family: 'Share Tech Mono', monospace;
     font-size: 1rem;
     
 }
 
 .skill-tag{
     border-radius: 1px;
+    font-family: 'Share Tech Mono', monospace;
     padding: 2px 12px;
     color: #ffd700;
     font-size: 1rem;
