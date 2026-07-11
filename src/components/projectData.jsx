@@ -1,0 +1,10 @@
+export const projects = [
+    {projectName: "Credit Card Fraud Detection", tagline: "Detects fraudulent bank transactions using ML, deployed live on AWS with automated CI/CD." , projectLink: "https://github.com/AshishBehal2004/MachineLearningProject", frameworks: ["Python, ", "Scikit-learn, ", "Flask, ", "AWS"], date: "December 2025 - April 2026", content: ["Built a modular ML pipeline separating data ingestion, preprocessing, and model training into reusable components with structured logging and exception handling, trained on Kaggle's dataset of 284,807 real transactions.",
+         "Addressed extreme class imbalance (0.17% fraud rate) by tuning a Random Forest classifier with a custom detection threshold of 0.2, optimizing for ROC-AUC score rather than accuracy.", 
+         "Deployed the application as a Flask web app on AWS Elastic Beanstalk with automated CI/CD via AWS CodePipeline, enabling automatic deployments on every GitHub push."]},
+
+    {projectName: "Strudel Beats Maker", tagline: "Browser-based DJ app for creating live-coded beats with real-time playback controls", projectLink: "https://github.com/AshishBehal2004/React-Strudel-Beats-Maker", frameworks: ["React, ", "Node.js, ", "JavaScript, ", "Bootstrap, " ], date: "December 2025 - February 2026", content:["Created an interactive web-based DJ interface that lets users create and control live-coded beats by adjusting CPM, volume, and instrument tracks using React state management.",
+        "Implemented real-time updates so changes to sliders and switches immediately affect playback, and added local storage to save and reload custom beat settings.",
+        "Integrated the Strudel engine and developed preprocessing logic to replace dynamic CPM and volume tags before running the beat, ensuring smooth playback."
+    ]}  
+]
