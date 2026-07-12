@@ -4,18 +4,24 @@ import { useState, useEffect } from 'react';
 
 export default function Project() {
 
-  const [flipIndex, setFlipIndex] = useState(-1);
-
+  const flipProjects = new Array(projects.length)
+  for (let i = 0; i < projects.length; i++ ){
+    flipProjects[i] = false;
+  }
+  const [flipState, setFlipState] = useState(flipProjects)
   
-
   return (
     <div id="project">
       <h2 className="section-heading">Projects</h2>
 
         <div className='project-wrapper'>
           {projects.map((item, index) => (
-          <div className="card-container" key={item.projectName} onClick={() => setFlipIndex(index)}>
-              <div className={flipIndex == index ? "inner-card flipped" : "inner-card" }>
+            <div className="card-container" key={item.projectName} onClick={() => {
+              const newFlipState = [...flipState]
+              newFlipState[index] = !newFlipState[index]
+              setFlipState(newFlipState)
+              }}>
+              <div className={flipState[index] ? "inner-card flipped" : "inner-card" }>
                 
               <div className="front-face">
                 <h3>{item.projectName}</h3>
