@@ -32,6 +32,10 @@ export default function Experience() {
       return
     }
     const interval2 = setInterval(() => {
+      if (bulletPoint >= data[0].description.length){
+        clearInterval(interval2)
+        return
+      }
       if (bulletposition >= bulletpoints.length){
         setBulletPoint(bulletPoint + 1)
         setBulletPosition(0)

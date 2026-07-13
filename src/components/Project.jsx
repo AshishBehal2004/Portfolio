@@ -16,7 +16,12 @@ export default function Project() {
 
         <div className='project-wrapper'>
           {projects.map((item, index) => (
-            <div className="card-container" key={item.projectName} onClick={() => {
+            <div className="card-container" key={item.projectName} onMouseMove={(e) => {const rect = e.currentTarget.getBoundingClientRect()
+              const centerX= rect.left + rect.width / 2
+              const centerY = rect.top + rect.height / 2
+
+            }
+            } onClick={() => {
               const newFlipState = [...flipState]
               newFlipState[index] = !newFlipState[index]
               setFlipState(newFlipState)
