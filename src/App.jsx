@@ -21,8 +21,8 @@ function App() {
       <Home/>
       <About/>
       <Experience/>
-      <Project/>
       <Skills/>
+      <Project/>
       <Contact/>
     </>
   )

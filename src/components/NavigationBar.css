@@ -52,6 +52,8 @@ html {
 
 .nav-links li a:hover{
     color: rgba(0, 255, 183, 0.862);
+    font-size: 32px;
+
     text-shadow: 0 0 10px #38bdf8;
      
 }
