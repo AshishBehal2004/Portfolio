@@ -9,7 +9,7 @@ export default function Project() {
         <div className='project-wrapper'>
           {projects.map((item, index) => (
             <div className="project-card" key={item.projectName}>   
-              <div className='project-image' > </div>
+              <div className='project-image' > <img src={item.image}></img></div>
               <div className="project-info">
                 <h3>{item.projectName}</h3>
                 <p className='project-tagline'>{item.tagline}</p>
