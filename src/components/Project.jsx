@@ -13,8 +13,8 @@ export default function Project() {
               <div className="project-info">
                 <h3>{item.projectName}</h3>
                 <p className='project-tagline'>{item.tagline}</p>
-                <a href={item.projectLink} target='_blank' rel='noreferrer'>View Project</a>
-                {item.date}
+                <a href={item.projectLink} className='project-link' target='_blank' rel='noreferrer'>View Project</a>
+                <span className='project-date'>{item.date}</span>
                 <div className='tech-tags'>{item.frameworks.map((framework) => (
                   <span key={framework}>{framework}</span>
                 ))}</div>
