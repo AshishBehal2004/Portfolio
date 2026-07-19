@@ -6,12 +6,13 @@
     max-width: 800px;
     margin: auto;
     overflow-y: auto;
-    height: 320px;
+    height: auto;
     box-shadow: 0 0 10px rgb(0, 91, 247);
 }
 
 .bulletpoints{
     color: #00ffb7;
+    margin-bottom: 10px;
 }
 .terminal-header{
     display: flex;
@@ -47,7 +48,9 @@
 .typewriter{
     white-space: pre-wrap;
     color: #00ffb7;
+    margin-bottom: 10px;
 }
+
 
 .comment{
     color: #6a9955; 

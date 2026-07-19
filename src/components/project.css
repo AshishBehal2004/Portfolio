@@ -23,6 +23,13 @@
     margin-bottom: 15px;
 }
 
+.project-link:hover {
+    /* background-color: #00ffb7; */
+    transform: scale(1.09);
+}
+
+
+
 .project-date {
 
     color: #8b949e;

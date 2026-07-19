@@ -5,7 +5,6 @@
 }
 
 #home{
-    background-color:#0d0d1a;
     color: white;
     min-height: 100vh;
     display: flex;
@@ -15,46 +14,47 @@
     
 }
 
-h1{
-    font-size: 5rem;
-}
-
 .info{
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.exp-button{
-    
-    --c: #fff;
-    /* text color */
-    background: linear-gradient(90deg, #0000 33%, #fff5, #0000 67%) var(--_p,100%)/300% no-repeat,
-    #8B5CF6;
-    /* background color */
-    color: #0000;
-    border: none;
-    border-radius:1em;
-    transform: perspective(500px) rotateY(calc(20deg*var(--_i,-1)));
-    text-shadow: calc(var(--_i,-1)* 0.08em) -.01em 0   var(--c),
-    calc(var(--_i,-1)*-0.08em)  .01em 2px #0004;
-    outline-offset: .1em;
-    transition: 0.3s;
-    font-weight: bold;
-    font-size: 2rem;
-    margin: 0;
+
+
+.exp-button {
+    background-color: #8B5CF6 ;
+    color: #0d0d1a;
+    border-radius: 8px ;
+    width: 200px;
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    padding: 0.75em 2.5emx;
+    display: inline-block;
+    text-decoration: none;
     cursor: pointer;
-    padding: .1em .3em;
 
+    font-weight: 600;
+    transition:  0.2s;
+}
+.exp-button:hover {
+    transform: scale(1.05);
 }
 
-.exp-button:hover, 
-.exp-button:focus-visible{
-    --_p: 0%;
-    --_i: 1;
+.body-text{
+    font-size: 2rem;
+    margin: auto;
+    max-width: 1500px;
+    margin-bottom: 70px;
 }
 
-.exp-button:active{
-    text-shadow: none;
-    color: var(--c);
-    box-shadow: inset 0 0 9e9q #0005;
-    transition: 0s;
+.name {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+.role {
+    font-size: 2rem;
+    margin-bottom: 10px;
 }
