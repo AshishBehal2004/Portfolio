@@ -7,6 +7,7 @@ import Contact from './components/Contact'
 import Experience from './components/Experience'
 import Home from './components/Home'
 import Project from './components/Project'
+import MoreProjects from './components/MoreProjects'
 import Skills from './components/Skills'
 import NavigationBar from './components/NavigationBar'
 import './App.css'
@@ -23,6 +24,7 @@ function App() {
       <Experience/>
       <Skills/>
       <Project/>
+      <MoreProjects/>
       <Contact/>
     </>
   )

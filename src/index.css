@@ -1,4 +1,4 @@
-@import "tailwindcss";
+/* @import "tailwindcss"; */
 
 body {
   margin: 0;
@@ -11,6 +11,12 @@ body {
   background-repeat: repeat, no-repeat;
   background-size: 180px 180px, cover;
   background-attachment: fixed;
+  font-family: 'windows-8-font', 'sans-serif' ;
+}
+
+@font-face {
+    font-family: 'windows-8-font' ;
+    src: url('font/selawk.ttf') format('truetype');
 }
 
 .section-heading{
@@ -38,5 +44,9 @@ body {
 }
 
 #skills{
+  color: aliceblue ;
+}
+
+#more-projects {
   color: aliceblue ;
 }

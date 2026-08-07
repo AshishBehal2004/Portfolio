@@ -30,6 +30,7 @@ export default function NavigationBar(){
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#project">Projects</a></li>
+                    {/* <li><a href="#more-projects">More Projects</a></li> */}
                     <li><a href="#contact">Contact</a></li>
                 </ul>                
             </div>

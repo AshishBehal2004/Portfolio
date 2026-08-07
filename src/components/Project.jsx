@@ -1,6 +1,4 @@
 import {projects} from './projectData'
-
-import {otherProjects} from './otherProjectData'
 import './project.css'
 export default function Project() {
 
@@ -26,19 +24,6 @@ export default function Project() {
               </div>
               
             </div>
-          ))}
-
-          {otherProjects.map((item, index) => (
-            <div>
-              <div>{item.projectName}</div>
-              <div>{item.image}</div>
-              <div>{item.tagline}</div>
-              <div>{item.projectLink}</div>
-              <div>{item.frameworks}</div>
-              <div>{item.date}</div>
-              <div>{item.content}</div>
-
-            </div>           
           ))}
         </div>
     </div>
