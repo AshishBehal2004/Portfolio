@@ -7,12 +7,13 @@ export default function Experience() {
   const fullText = '> role: "Virtual Tour Developer"\n> company: "ARCIVE"\n> period: "Sept 2025 - Feb 2026"'
   const [letter, setLetter] = useState("");
   const [letterPosition, setLetterPosition] = useState(0);
-
   const [bulletPoint, setBulletPoint] = useState(0);
   const [bulletposition, setBulletPosition] = useState(0);
   const [bulletText, setBulletText] = useState("");
   const bulletpoints = data[0].description[bulletPoint];
   const [completedBullets, setCompletedBullets] = useState([])
+
+  
   useEffect(() => {
     const interval = setInterval(() =>{
 
@@ -46,7 +47,6 @@ export default function Experience() {
         setBulletText(bulletText + bulletpoints[bulletposition])
         setBulletPosition(bulletposition + 1) 
       }
-      
     }, 9)
     return () => clearInterval(interval2)
   }, [bulletposition, letterPosition, bulletPoint])
@@ -65,7 +65,6 @@ export default function Experience() {
         <pre className='typewriter'>{letter}</pre>
         {completedBullets.map((b,i) => <p className="bulletpoints" key={i}> -- {b}</p>)}
         <p>{bulletText}</p>
-        
       </div>
     </div>
   </section>

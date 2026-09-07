@@ -8,7 +8,6 @@ export default function Contact() {
         <form className="contact-form" action="https://api.web3forms.com/submit" method="POST">
 
           <input type="hidden" name="access_key" value="9e973e5f-be42-4661-b9d9-dd0c5c5d5d6f"/>
-
           <div className="form-field">
             <input type="text" name="name" placeholder=" " required/>
             <label htmlFor="floatingInput">Name</label>

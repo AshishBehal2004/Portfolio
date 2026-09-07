@@ -22,7 +22,6 @@ export default function Project() {
                   <li key={point}>{point}</li>
                 ))}</ul>
               </div>
-              
             </div>
           ))}
         </div>

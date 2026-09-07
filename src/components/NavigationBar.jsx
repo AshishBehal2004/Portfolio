@@ -3,7 +3,6 @@ import './NavigationBar.css'
 export default function NavigationBar(){
 
     const [toggle, setToggle ] = useState(false);
-    
 
     function scrolling(){
         const scroll_value = window.scrollY;
@@ -35,6 +34,5 @@ export default function NavigationBar(){
                 </ul>                
             </div>
         </nav>
-
     );
 }
